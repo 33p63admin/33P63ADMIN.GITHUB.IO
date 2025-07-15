@@ -118,13 +118,22 @@ background-color: #2c3e50;
         }
         
         /* 页脚 */
-        footer {
+      footer {
             background-color: #2c3e50;
-            color: white;
+            color: red;
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
-        }
+            a {
+            color: blue; /* 默认链接颜色 */
+            }
+            a:hover {
+            color: darkblue; /* 鼠标悬停颜色 */
+            }
+            a:visited {
+            color: purple; /* 已访问链接颜色 */
+            }
+            }
         
         /* 响应式设计 - 当屏幕宽度小于768px时 */
         @media screen and (max-width: 768px) {
